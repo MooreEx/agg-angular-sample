@@ -1,0 +1,81 @@
+@mixin default-font-size {
+  ::ng-deep * {
+    font-size: 16px;
+  }
+}
+
+@mixin fullscreen-page {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin flex-row-vertical-centering {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin flex-row-horizontal-centering {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+@mixin flex-column-vertical-centering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin flex-column-horizontal-centering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@mixin flex-row-full-centering {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-full-centering {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin blackout {
+  background: rgba(0,0,0,.6);
+}
+
+@mixin mat-icon-size($size) {
+  width: $size;
+  height: $size;
+  font-size: $size;
+  line-height: $size;
+}
+
+@mixin hover-opacity {
+  opacity: .9;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@mixin hover-background-color($from, $to) {
+  background-color: $from;
+
+  &:hover {
+    background-color: $to;
+  }
+}
+
