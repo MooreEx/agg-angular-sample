@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./keys-helper-item.component.scss']
 })
 export class KeysHelperItemComponent {
-  @Input() keyName: string;
-  @Input() iconName: string;
+  @Input() keyName: string = '';
+  @Input() iconName: string = '';
 }
