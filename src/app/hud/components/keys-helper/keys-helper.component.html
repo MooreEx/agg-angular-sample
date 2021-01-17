@@ -1,0 +1,9 @@
+<div class="toggle-helper">{{ data.toggleKeyName }} - скрыть</div>
+<div class="key-helpers">
+  <app-keys-helper-item
+    class="key-helper"
+    *ngFor="let item of data.keyHelpers"
+    [iconName]="item.iconName"
+    [keyName]="item.keyName"
+  ></app-keys-helper-item>
+</div>

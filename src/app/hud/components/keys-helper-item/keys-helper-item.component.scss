@@ -1,0 +1,31 @@
+@import '/src/assets/styles/mixins';
+
+:host {
+  $size: 1.6vw;
+
+  @include flex-row-vertical-centering;
+
+  .icon, .key {
+    @include flex-row-full-centering;
+    height: $size;
+    width: $size;
+  }
+
+  .icon {
+    margin-right: $size / 3;
+    .mat-icon {
+      @include mat-icon-size($size / 1.2);
+
+      ::ng-deep * {
+        fill: white;
+      }
+    }
+  }
+
+  .key {
+    border-radius: $size / 4;
+    background: rgba(0, 0, 0, .5);
+    font-size: $size / 2;
+    color: white;
+  }
+}
